@@ -3,7 +3,7 @@ Contributors: vascofmdc
 Tags: maps, google maps, acf, advanced custom fields, location, shortcode
 Requires at least: 5.0
 Tested up to: 6.8.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,6 +57,10 @@ Yes, as long as your custom post type uses ACF to store location data with the f
 Currently it displays one marker per shortcode. You can expand the plugin if you want multiple markers.
 
 == Changelog ==
+
+= 1.0.1 =  
+* Added updater system.
+
 
 = 1.0.0 =  
 * Initial release with shortcode support, API key and Map ID settings page, and Advanced Marker support.

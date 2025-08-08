@@ -4,13 +4,17 @@
 	Plugin URI: http://www.vascofialho.nl
 	Description: Displays Advanced Custom Fields Google Map with shortcode and settings page for API key.
 	Author: vascofmdc
-	Version: 1.0
+	Version: 1.0.1
 	Author URI: http://www.vascofialho.nl
 	Text Domain: vjfnl-acf-map-display
 */
 
 // Load install checks
 	require_once plugin_dir_path(__FILE__) . 'includes/install.php';
+
+// Include the GitHub-based plugin updater
+	require_once plugin_dir_path(__FILE__) . 'includes/updater.php';
+
 
 // Adds link to settings in the plugins list page
 	add_filter('plugin_action_links_' . plugin_basename(__FILE__), function($links) {
