@@ -96,7 +96,7 @@ function gmdfacf_plugin_info( $res, $action, $args ) {
 		'download_link'  => $update_url,
 		'trunk'          => $update_url,
 		'sections'       => array(
-		'description' => 'Displays all posts in the current category and highlights the current post.',
+		'description' => 'Displays Advanced Custom Fields Google Map with shortcode and settings page for API key.',
 		'changelog'   => '<p><strong>' . esc_html( $remote_version ) . '</strong> – See GitHub for details.</p>',
 		),
 	);
