@@ -21,7 +21,7 @@ add_filter( 'plugins_api', 'gmdfacf_plugin_info', 20, 3 );
  */
 function gmdfacf_get_local_version() {
 	require_once ABSPATH . 'wp-admin/includes/plugin.php';
-	$data = get_plugin_data( WP_PLUGIN_DIR . '/google-maps-display-for-acf/vjfnl-acf-map-display.php' );
+	$data = get_plugin_data( WP_PLUGIN_DIR . '/vjfnl-acf-map-display/vjfnl-acf-map-display.php' );
 	return $data['Version'];
 }
 
@@ -54,7 +54,7 @@ function gmdfacf_check_for_plugin_update( $transient ) {
 		return $transient;
 	}
 
-	$plugin_slug     = 'very-simple-category-posts/vjfnl-acf-map-display.php';
+	$plugin_slug     = 'vjfnl-acf-map-display/vjfnl-acf-map-display.php';
 	$current_version = gmdfacf_get_local_version();
 	$remote_version  = gmdfacf_get_latest_github_release();
 
@@ -96,8 +96,8 @@ function gmdfacf_plugin_info( $res, $action, $args ) {
 		'download_link'  => $update_url,
 		'trunk'          => $update_url,
 		'sections'       => array(
-		'description' => 'Displays Advanced Custom Fields Google Map with shortcode and settings page for API key.',
-		'changelog'   => '<p><strong>' . esc_html( $remote_version ) . '</strong> – See GitHub for details.</p>',
+		'description' => 'Displays Advanced Custom Fields Google Map with shortcode and settings page for API key.,
+		'changelog'   => '<p><strong>' . esc_html( $remote_version ) . '</strong> – See GitHub or readme.txt for details.</p>',
 		),
 	);
 
