@@ -1,16 +1,28 @@
 <?php
 /*
 	Plugin Name: Google Maps Display for ACF
-	Plugin URI: http://www.vascofialho.nl
-	Description: Displays Advanced Custom Fields Google Map with shortcode and settings page for API key.
+	Plugin URI: https://www.vascofialho.nl/wordpress/plugins/google-maps-display-for-acf/
+	Description: Displays Advanced Custom Fields's Google Map by using a shortcode.
 	Author: vascofmdc
-	Version: 1.0.1
+	Version: 1.0.2
 	Author URI: http://www.vascofialho.nl
 	Text Domain: vjfnl-acf-map-display
 */
 
+// Exit if accessed directly
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 // Load install checks
-	require_once plugin_dir_path(__FILE__) . 'includes/install.php';
+require_once plugin_dir_path(__FILE__) . 'includes/install.php';
+
+// Register activation hook for the **main plugin file**
+register_activation_hook(__FILE__,
+    function() {
+        vjfnl_acf_map_display_activation_check(__FILE__);
+    }
+);
 
 // Include the GitHub-based plugin updater
 	require_once plugin_dir_path(__FILE__) . 'includes/updater.php';
