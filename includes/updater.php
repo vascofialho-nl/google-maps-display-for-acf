@@ -62,7 +62,7 @@ function gmdfacf_check_for_plugin_update( $transient ) {
 		return $transient;
 	}
 
-	$update_url = 'https://github.com/vascofialho-nl/very-simple-category-posts/releases/download/' . $remote_version . '/google-maps-display-for-acf.zip';
+	$update_url = 'https://github.com/vascofialho-nl/google-maps-display-for-acf/releases/download/' . $remote_version . '/vjfnl-acf-map-display.zip';
 
 	$transient->response[ $plugin_slug ] = (object) array(
 		'slug'        => 'google-maps-display-for-acf',
@@ -80,12 +80,12 @@ function gmdfacf_check_for_plugin_update( $transient ) {
  */
 function gmdfacf_plugin_info( $res, $action, $args ) {
 	if ( $action !== 'plugin_information' ) return $res;
-	if ( $args->slug !== 'very-simple-category-posts' ) return $res;
+	if ( $args->slug !== 'google-maps-display-for-acf' ) return $res;
 
 	$remote_version = gmdfacf_get_latest_github_release();
 	if ( ! $remote_version ) return $res;
 
-	$update_url = 'https://github.com/vascofialho-nl/very-simple-category-posts/releases/download/' . $remote_version . '/very-simple-category-posts.zip';
+	$update_url = 'https://github.com/vascofialho-nl/google-maps-display-for-acf/releases/download/' . $remote_version . '/vjfnl-acf-map-display.zip';
 
 	$res = (object) array(
 		'name'           => 'Google Maps Display for ACF',
@@ -96,8 +96,8 @@ function gmdfacf_plugin_info( $res, $action, $args ) {
 		'download_link'  => $update_url,
 		'trunk'          => $update_url,
 		'sections'       => array(
-		'description' 	 => 'Displays Advanced Custom Fields Google Map with shortcode and settings page for API key.,
-		'changelog'      => '<p><strong>' . esc_html( $remote_version ) . '</strong> – See GitHub or readme.txt for details.</p>',
+		'description' => 'A lightweight WordPress plugin to display Google Maps on your site using Advanced Custom Fields (ACF).',
+		'changelog'   => '<p><strong>' . esc_html( $remote_version ) . '</strong> – See GitHub or readme.txt for details.</p>',
 		),
 	);
 
