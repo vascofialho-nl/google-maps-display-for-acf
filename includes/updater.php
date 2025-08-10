@@ -22,7 +22,7 @@
 	define( 'VASCOFIALHONL_PLUGIN_FILE_NAME',        'vjfnl-acf-map-display.php' );      // Main plugin file name
 	define( 'VASCOFIALHONL_PLUGIN_NAME',             'Google Maps Display for ACF' );    // Human-readable plugin name
 
-	define( 'VASCOFIALHONL_PACKAGE_FILE',            'google-maps-display-for-acf.zip' ); // Release zip file name
+	define( 'VASCOFIALHONL_PACKAGE_FILE',            'vjfnl-acf-map-display.zip' ); // Release zip file name
 
 	define( 'VASCOFIALHONL_PLUGIN_SLUG',             VASCOFIALHONL_PLUGIN_MAP_NAME . '/' . VASCOFIALHONL_PLUGIN_FILE_NAME );
 
