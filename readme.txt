@@ -3,11 +3,12 @@ Contributors: vascofmdc
 Tags: maps, google maps, acf, advanced custom fields, location, shortcode
 Requires at least: 5.0
 Tested up to: 6.8.2
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-A lightweight WordPress plugin to display Google Maps on your site using Advanced Custom Fields (ACF). Easily show map locations with shortcodes and manage your Google Maps API key and Map ID from a dedicated settings page.
+A lightweight WordPress plugin to display Google Maps on your site using Advanced Custom Fields (ACF). 
+Easily show map locations with shortcodes and manage your Google Maps API key and Map ID from a dedicated settings page.
 
 == Description ==
 
@@ -61,6 +62,9 @@ Yes, as long as your custom post type uses ACF to store location data with the f
 Currently it displays one marker per shortcode. You can expand the plugin if you want multiple markers.
 
 == Changelog ==
+
+= 1.0.3 = 2025-08-10
+* several bugfixes and stability improvements
 
 = 1.0.2 = 2025-08-09
 * several bugfixes and stability improvements
