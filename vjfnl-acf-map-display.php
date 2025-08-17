@@ -4,7 +4,7 @@
 	Plugin URI: https://www.vascofialho.nl/wordpress/plugins/google-maps-display-for-acf/
 	Description: Displays Advanced Custom Fields's Google Map by using a shortcode.
 	Author: vascofmdc
-	Version: 1.0.3
+	Version: 1.0.4
 	Author URI: http://www.vascofialho.nl
 	Text Domain: vjfnl-acf-map-display
 */
